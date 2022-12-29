@@ -8,6 +8,7 @@ export const app = express()
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
+app.use(cors())
 // for api checking
 app.get('/check', (req, res, next) => {
     res.status(200).json({
