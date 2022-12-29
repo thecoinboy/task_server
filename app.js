@@ -4,7 +4,7 @@ import mongoose from 'mongoose'
 import { Student } from './model/studentSchema.js'
 import { College } from './model/collegeSchema.js'
 export const app = express()
-
+import cors from 'cors'
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
